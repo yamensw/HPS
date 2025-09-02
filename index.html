@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Highlands Power Wash - Lincoln, NE</title>
+  <meta name="description" content="Highlands Power Wash: driveways, garages, siding, patios, and more in Lincoln, NE. Same-day slots available."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <path fill="#0d9488" d="M32 6C20 18 8 26 8 38a24 24 0 1048 0c0-12-12-20-24-32z"/>
+          <text x="32" y="43" text-anchor="middle" font-size="20" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700">HPW</text>
+        </svg>
+        <strong>Highlands Power Wash</strong>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#gallery">Gallery</a><a href="#faqs">FAQs</a><a href="#service-area">Service Area</a><a href="#book">Book</a><a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="container">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#gallery">Gallery</a><a href="#faqs">FAQs</a><a href="#service-area">Service Area</a><a href="#book">Book</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Make Your Home Shine—Today.</h1>
+        <p>Professional power washing in the Highlands neighborhood of Lincoln, NE. Same-day slots available.</p>
+        <div class="flex">
+          <a class="btn btn-primary" href="#book">Book an Appointment</a>
+          <a class="btn btn-outline" href="#quote">Get a Free Quote</a>
+        </div>
+        <p style="margin-top:18px">✅ Fully Insured &nbsp;&nbsp; ✅ Eco-Friendly Options &nbsp;&nbsp; ✅ Satisfaction Guaranteed</p>
+      </div>
+      <div><img class="hero-img" src="driveway-before-after.jpg" alt="Driveway before and after power washing"></div>
+    </div>
+  </header>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services & Pricing</h2><p class="lead">Lincoln Benchmarks — Transparent, Fair Pricing</p>
+      <div class="grid cols-3">
+        <div class="card"><h3>Driveway (2-car)</h3><p class="muted">60–90 min</p><p class="price">$79 <span class="muted">starting at</span></p><p>Complete driveway cleaning and restoration.</p></div>
+        <div class="card"><h3>Garage Floor</h3><p class="muted">30–45 min</p><p class="price">$49 <span class="muted">starting at</span></p><p>Deep clean garage floor surfaces.</p></div>
+        <div class="card"><h3>House Siding (one side)</h3><p class="muted">60–90 min</p><p class="price">$69 <span class="muted">starting at</span></p><p>Professional siding restoration.</p></div>
+        <div class="card"><h3>Full Garage Exterior</h3><p class="muted">siding/door</p><p class="price">$79 <span class="muted">starting at</span></p><p>Complete garage exterior cleaning.</p></div>
+        <div class="card"><h3>Walkways / Front Steps</h3><p class="muted">Quick service</p><p class="price">$29 <span class="muted">starting at</span></p><p>Clean and safe walkway surfaces.</p></div>
+        <div class="card"><h3>Patio / Small Deck</h3><p class="muted">Outdoor spaces</p><p class="price">$29 <span class="muted">starting at</span></p><p>Restore outdoor living areas.</p></div>
+        <div class="card"><h3>Fence (per 50 ft)</h3><p class="muted">Linear pricing</p><p class="price">$49 <span class="muted">per 50 ft</span></p><p>Fence cleaning and restoration.</p></div>
+        <div class="card"><h3>Gutter Brightening</h3><p class="muted">Exterior only</p><p class="price">$29 <span class="muted">starting at</span></p><p>Remove gutter stains and buildup.</p></div>
+        <div class="card"><h3>Trash Bin Sanitation</h3><p class="muted">Each bin</p><p class="price">$25 <span class="muted">each</span></p><p>Deep clean and sanitize bins.</p></div>
+      </div>
+      <p class="center muted" style="margin-top:18px">Pricing reflects typical Highlands home sizes; final quote confirmed on site.</p>
+    </div>
+  </section>
+
+  <section id="packages" class="section" style="background:#f3f4f6">
+    <div class="container">
+      <h2>Money-Saving Packages</h2><p class="lead">Bundle & save vs. à la carte. Most homes completed in 2–3 hours.</p>
+      <div class="grid cols-3">
+        <div class="card package">
+          <div class="center" style="margin-bottom:10px"><h3>Basic</h3><div class="price">$149</div></div>
+          <ul><li>✔ Driveway (2-car)</li><li>✔ Garage Exterior (siding/door)</li></ul>
+          <p class="center"><a class="btn btn-ghost" href="#book" onclick="selectPackage('Basic')">Choose Basic</a></p>
+        </div>
+        <div class="card package">
+          <div class="center" style="margin-bottom:10px"><h3>Standard</h3><div class="price">$199</div></div>
+          <ul><li>✔ Everything in Basic</li><li>✔ Garage Floor</li></ul>
+          <p class="center"><a class="btn btn-ghost" href="#book" onclick="selectPackage('Standard')">Choose Standard</a></p>
+        </div>
+        <div class="card package best">
+          <div class="badge" style="position:absolute;top:-10px;right:-10px">⭐ Best Value</div>
+          <div class="center" style="margin-bottom:10px"><h3>Premium</h3><div class="price">$249</div></div>
+          <ul><li>✔ Everything in Standard</li><li>✔ Front Walkway/Steps OR Small Patio/Deck</li></ul>
+          <p class="center"><a class="btn btn-solid" href="#book" onclick="selectPackage('Premium')">Choose Premium</a></p>
+        </div>
+      </div>
+      <div class="center" style="margin-top:22px"><span class="badge">Today-Only Special</span><p style="margin-top:8px;color:#9a3412;font-weight:600">20% off all packages — Limited time!</p></div>
+    </div>
+  </section>
+
+  <section id="book" class="section">
+    <div class="container">
+      <h2>Book an Appointment</h2><p class="lead">Pick a time that works for you. We'll confirm by text and email.</p>
+      <div class="card center">
+        <div id="gc-wrap" style="margin-bottom:16px">
+          <script>
+            (function() {
+              var target = document.currentScript;
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ37DvSZpgKPHIznfv-SuaW6mvP7kE1kQB_pvRrZ1g59cTo04NCRlB3QCZNQRahRW3bxgQL1_2iQ?gv=true',
+                  color: '#039BE5', label: 'Book an appointment', target,
+                });
+              });
+            })();
+          </script>
+        </div>
+        <a class="btn btn-solid" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ37DvSZpgKPHIznfv-SuaW6mvP7kE1kQB_pvRrZ1g59cTo04NCRlB3QCZNQRahRW3bxgQL1_2iQ?gv=true" target="_blank" rel="noopener">Open Full Scheduler</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="section" style="background:#f3f4f6">
+    <div class="container">
+      <h2>Get Your Quick Quote</h2><p class="lead">We'll text you within 15 minutes with your estimate</p>
+      <div class="card">
+        <form id="quote-form" action="https://formspree.io/f/xblaynol" method="POST" onsubmit="submitQuote(event)">
+          <input type="hidden" name="_subject" value="New Highlands Power Wash Quote"><input type="hidden" name="_template" value="table"><input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off">
+          <div class="grid cols-2">
+            <div><label for="name">Name *</label><input id="name" name="name" type="text" required></div>
+            <div><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" required></div>
+          </div>
+          <div class="grid cols-2" style="margin-top:16px">
+            <div><label for="address">Address with ZIP *</label><input id="address" name="address" type="text" required></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email"></div>
+          </div>
+          <div style="margin:16px 0">
+            <span style="display:block;margin-bottom:6px">Services Interested In *</span>
+            <div class="grid cols-2">
+              <label class="checkbox"><input name="services" value="Driveway" type="checkbox"> <span>Driveway</span></label>
+              <label class="checkbox"><input name="services" value="House Siding" type="checkbox"> <span>House Siding</span></label>
+              <label class="checkbox"><input name="services" value="Garage" type="checkbox"> <span>Garage</span></label>
+              <label class="checkbox"><input name="services" value="Walkways" type="checkbox"> <span>Walkways</span></label>
+              <label class="checkbox"><input name="services" value="Patio/Deck" type="checkbox"> <span>Patio/Deck</span></label>
+              <label class="checkbox"><input name="services" value="Other" type="checkbox"> <span>Other</span></label>
+            </div>
+          </div>
+          <div class="grid cols-2">
+            <div><label for="preferred">Preferred Date/Time</label><input id="preferred" name="preferred_time" type="text" placeholder="e.g., This weekend, ASAP, etc."></div>
+            <div><label for="notes">Notes</label><textarea id="notes" name="notes" rows="3"></textarea></div>
+          </div>
+          <div style="margin:12px 0"><label class="checkbox"><input type="checkbox" name="ok_to_text" value="yes"> <span class="muted">Text me updates</span></label></div>
+          <button class="btn btn-solid submit" type="submit">Get My Quote</button>
+        </form>
+        <div id="quote-success" class="hidden center" style="padding:28px"><div style="font-size:22px;color:#16a34a;font-weight:800">Thanks!</div><p class="muted">We'll text you within 15 minutes with your quote.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Before & After Gallery</h2><p class="lead">See the amazing transformations we deliver</p>
+      <div class="grid cols-3">
+        <div class="card"><img src="driveway-before-after.jpg" alt="Driveway before and after"><p><strong>Driveway Renewal</strong><br><span class="muted">Complete transformation in 90 minutes</span></p></div>
+        <div class="card"><img src="patio-before-after.jpg" alt="Patio before and after"><p><strong>Patio Cleanup</strong><br><span class="muted">Moss and dirt removed for a fresh look</span></p></div>
+        <div class="card"><img src="algae-before-after.jpg" alt="Stone algae removal before and after"><p><strong>Algae Removal</strong><br><span class="muted">Stone surface restored to natural color</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faqs" class="section" style="background:#f3f4f6">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2><p class="lead">Everything you need to know</p>
+      <div class="grid">
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(0)"><span>How long does it take?</span><span>▼</span></button><div class="faq-content"><p>Most jobs take 1–3 hours, depending on scope. A typical driveway takes 60–90 minutes, while our Premium package usually takes 2–3 hours total.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(1)"><span>Do I need to be home?</span><span>▼</span></button><div class="faq-content"><p>Not required if we have outdoor access to water and power. We'll text you before we arrive and when we're finished, with photos of the completed work.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(2)"><span>Is it safe for plants and paint?</span><span>▼</span></button><div class="faq-content"><p>Yes—we adjust pressure and offer eco-friendly options. We pre-wet plants and use protective measures around delicate surfaces. All our cleaning solutions are biodegradable.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(3)"><span>What payment methods do you accept?</span><span>▼</span></button><div class="faq-content"><p>Cash, card, or invoice on completion. We accept all major credit cards and can send you an invoice if you prefer to pay later.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(4)"><span>What if it rains?</span><span>▼</span></button><div class="faq-content"><p>We'll reschedule at no charge. We monitor weather closely and will contact you if conditions aren't suitable for optimal results.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="service-area" class="section">
+    <div class="container">
+      <h2>Service Area</h2><p class="lead">Proudly serving Highlands and surrounding Lincoln areas</p>
+      <div class="grid cols-2">
+        <div class="card"><h3>Coverage Area</h3><p>• Highlands (68521) — Primary Service Area</p><p>• North & Northwest Lincoln</p><p>• Surrounding Areas</p><div style="background:rgba(13,148,136,.12);padding:14px;border-radius:12px;margin-top:10px"><strong style="color:var(--navy)">Same-day service often available</strong><p class="muted">Call or text for availability in your area</p></div></div>
+        <div class="card"><iframe class="map" style="width:100%;height:320px;border:0;border-radius:12px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Highlands%20Lincoln%20NE%2068521&output=embed"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2 style="font-size:34px;margin:0 0 10px">Ready to make it shine?</h2>
+      <p class="lead" style="color:#fff;opacity:.9;margin-bottom:18px">Get your free quote today and see the difference professional power washing makes</p>
+      <div class="flex"><a class="btn btn-ghost" href="tel:+14028903781">Call Now</a><a class="btn btn-outline" href="#book">Book Today</a><a class="btn btn-outline" href="sms:+14028903781?body=Hi! I'd like a quote. Here's a photo of what needs cleaning:">Text a Photo for Fast Quote</a></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container grid cols-3">
+      <div><h3>Highlands Power Wash</h3><p class="muted">Professional power washing services in Lincoln, NE</p></div>
+      <div><h4>Contact Info</h4><p>📞 <a href="tel:+14028903781">(402) 890-3781</a></p><p>✉️ <a href="mailto:yamenalshdifat75@gmail.com">yamenalshdifat75@gmail.com</a></p><p>🕒 Mon–Sat 8am–6pm</p><p>📍 Serving Highlands & Lincoln, NE</p></div>
+      <div><h4>Quick Links</h4><p><a href="#services">Services & Pricing</a></p><p><a href="#packages">Package Deals</a></p><p><a href="#book">Book Now</a></p><p><a href="#quote">Get Quote</a></p></div>
+    </div>
+    <div class="container center" style="margin-top:12px;font-size:14px">© 2024 Highlands Power Wash. All rights reserved.</div>
+  </footer>
+
+<script>
+function toggleMobileMenu(){var m=document.getElementById('mobile-menu');m.style.display=m.style.display==='block'?'none':'block'}
+function scrollToSection(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+function selectPackage(name){alert('You selected the '+name+' package!');scrollToSection('book')}
+function submitQuote(e){e.preventDefault();var f=document.getElementById('quote-form');var d=new FormData(f);
+  fetch(f.action,{method:'POST',body:d,headers:{'Accept':'application/json'}}).then(function(){f.classList.add('hidden');document.getElementById('quote-success').classList.remove('hidden')}).catch(function(){alert('There was a problem sending your quote. Please call or text.')})}
+function toggleFaq(i){var c=document.querySelectorAll('.faq-content');c[i].classList.toggle('open')}
+</script>
+</body>
+</html>
